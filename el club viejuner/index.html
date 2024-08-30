@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios viejuners</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Club viejuners</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset id="tu">
+                <h2>Quien eres:</h2>
+                <label for="nombre">nombre</label><br>
+                <input type="text" name="nombre" id="nombre" autofocus placeholder="Ingresa tu nombre" required><br>
+
+                <label for="apellidos">apellidos</label><br>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Ingresa tus apellidos" required><br>
+
+                <label for="edad">edad</label><br>
+                <input type="number" name="edad" id="edad" placeholder="Edad" min="18" max="120" required><br>
+                <hr>
+                <p>Género</p>
+                <label for="masculino">masculino</label>
+                <input type="radio" name="sexo" id="masculino" value="masculino" required><br>
+                <label for="femenino">femenino</label>
+                <input type="radio" name="sexo" id="femenino" value="femenino">
+                <hr>
+                <label for="viejuner">Me siento viejuner</label><br>
+                <input type="checkbox" name="viejuner" id="viejuner" value="Yes"><br>
+                <hr>
+                <label for="info">Cuentanos algo sobre ti</label><br>
+                <textarea name="info" id="info" rows="8" placeholder="Siempre he querido lograr..." maxlength="300"></textarea>
+            </fieldset>
+            <fieldset id="botones">
+                <input type="reset" name="reset" id="reset">
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </main>
+    
+</body>
+</html>
